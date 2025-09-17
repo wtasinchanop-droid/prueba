@@ -1,0 +1,17 @@
+# Configuración de Virtual Host para WAMP64
+# Agregar esto al archivo httpd-vhosts.conf de Apache
+
+<VirtualHost *:80>
+    ServerName laravel-prueba.local
+    DocumentRoot "c:/wamp64/www/prueba/laravel-app/public"
+    <Directory "c:/wamp64/www/prueba/laravel-app/public">
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+# También agregar esta línea al archivo hosts de Windows (C:\Windows\System32\drivers\etc\hosts):
+# 127.0.0.1    laravel-prueba.local
+
+# Después de hacer estos cambios, podrás acceder a la aplicación en:
+# http://laravel-prueba.local

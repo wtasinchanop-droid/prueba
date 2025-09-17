@@ -1,0 +1,87 @@
+/* Custom AdminLTE Styles */
+
+/* Estilo de prueba para verificar carga */
+p[style*="color: red"] {
+    color: red !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Dashboard Cards */
+.small-box {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.small-box:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Card Improvements */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    border-bottom: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+}
+
+/* Table Improvements */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table thead th {
+    border-top: none;
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+/* Button Improvements */
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* Form Improvements */
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+/* Livewire Loading States */
+.livewire-loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Responsive Improvements */
+@media (max-width: 768px) {
+    .small-box .inner h3 {
+        font-size: 1.5rem;
+    }
+    
+    .small-box .inner p {
+        font-size: 0.9rem;
+    }
+}
